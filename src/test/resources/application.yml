@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ml-book-service
+  main:
+    banner-mode: "off"
+  profiles:
+    active: test
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+    default-schema: ml_book_service
+  jpa:
+    properties:
+      hibernate:
+        default_schema: ml_book_service
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    liquibase: INFO
+
+server:
+  port: 8000
