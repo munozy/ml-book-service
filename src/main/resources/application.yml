@@ -5,9 +5,6 @@ spring:
     banner-mode: "off"
   profiles:
     active: prod
-  liquibase:
-    change-log: classpath:/db/changelog/db.changelog-master.xml
-    default-schema: ml_book_service
   jpa:
     properties:
       hibernate:

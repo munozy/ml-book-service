@@ -1,6 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb;
+    url: jdbc:h2:mem:devdb;
     username: sa
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-dev.xml
+    default-schema: ml_book_service
   h2.console.enabled: true

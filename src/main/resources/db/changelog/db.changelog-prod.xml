@@ -5,6 +5,5 @@
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    <include file="/db/changelog/changes/db.changelog-0.1.sql"/>
-    <include file="/db/changelog/changes/db.changelog-0.2.sql"/>
+    <includeAll path="db/changelog/changes/structure"/>
 </databaseChangeLog>

@@ -4,6 +4,9 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/wukong?currentSchema=ml_book_service
     initialization-mode: always
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-prod.xml
+    default-schema: ml_book_service
   jpa:
     database: POSTGRESQL
     properties:
